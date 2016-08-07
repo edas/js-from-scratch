@@ -4,7 +4,9 @@
   "description": "First tries for a Javascript project from scratch",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib --source-maps",
+    "watch": "babel src -d lib --watch --source-maps"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/edas/js-from-scratch/issues"
   },
-  "homepage": "https://github.com/edas/js-from-scratch#readme"
+  "homepage": "https://github.com/edas/js-from-scratch#readme",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.11.5"
+  }
 }
